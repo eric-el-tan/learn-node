@@ -1,0 +1,23 @@
+{
+  "name": "learn-node",
+  "version": "1.0.0",
+  "description": "- Node.js - Tutorial - First Application, [Http Server](https://www.youtube.com/watch?v=JH4qVqplC8E)\r - [JavaScript Array Reduce](https://www.youtube.com/watch?v=g1C40tDP0Bk)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eric-el-tan/learn-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eric-el-tan/learn-node/issues"
+  },
+  "homepage": "https://github.com/eric-el-tan/learn-node#readme",
+  "devDependencies": {
+    "jest": "^26.5.3"
+  }
+}
