@@ -12,6 +12,8 @@ etan221@it369948 MINGW64 /c/opt/08-node/learn-node (main)
 
 - `npm init -y`
 - `npm i --save-dev jest`
-- `npm test`
+- `npm test` test all
 - `node array/reduce.js`
 - `node array/obj2arr.js`, [Object To Array in Javascript](https://www.youtube.com/watch?v=Rvfl7nKNcMU)
+
+- `npm test jest/moment.test.js` - test only path/to/file
