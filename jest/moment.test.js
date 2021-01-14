@@ -39,7 +39,7 @@ test("daylight saving affect date difference: Apr 07 - Apr 06: 1 days", () => {
   expect(daysOfCountable === 1.0).toBe(true);
 });
 
-test.only("remove timezone", () => {
+test("remove timezone", () => {
   let s1 = "2020-04-01";
   let s2 = "2020-04-06"; // float number
   let start = moment(s1, "YYYY-MM-DD").startOf("day").utc(true); // .utc(true) to remove timezone
@@ -51,4 +51,18 @@ test.only("remove timezone", () => {
   console.log(`daysOfCountable: ${JSON.stringify(daysOfCountable)}`);
 
   expect(daysOfCountable === 5).toBe(true);
+});
+
+test.only("date difference between Jan 1 and Dec 31", () => {
+  let s1 = "2020-04-01";
+  let s2 = "2020-04-06"; // float number
+  let start = moment(s1, "YYYY-MM-DD").startOf("year").utc(true); // .utc(true) to remove timezone
+  let end = moment(s2, "YYYY-MM-DD").endOf("year").startOf("day").utc(true); // endOfYear n startOfDay -> Dec 31 00:00:00
+  console.log(`start: ${start} - end: ${end}`);
+  console.log(`start: ${JSON.stringify(start)} - end: ${JSON.stringify(end)}`);
+
+  let daysOfCountable = Math.abs(moment.duration(start.diff(end)).asDays());
+  console.log(`daysOfCountable: ${JSON.stringify(daysOfCountable)}`);
+
+  expect(daysOfCountable === 365).toBe(true);
 });
