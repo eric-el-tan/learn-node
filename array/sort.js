@@ -42,7 +42,7 @@ function compare(a,b){
     return b.y - a.y;
 }
 
-function tryToSortObject_inlineFunction(a, b) {
+function tryToSortObject_inlineFunction() {
     // let vals = ["a","hello","b","goodbye"];
     let vals = [{x:5,y:6},{x:2, y:10}];
     console.log(vals);
@@ -51,5 +51,7 @@ function tryToSortObject_inlineFunction(a, b) {
 
     return true;
 }
+
+
 
 module.exports = [tryToSort, tryToSortString, tryToSortObject_inlineFunction];
