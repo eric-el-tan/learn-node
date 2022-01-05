@@ -4,7 +4,8 @@
   "description": "- Node.js - Tutorial - First Application, [Http Server](https://www.youtube.com/watch?v=JH4qVqplC8E)\r - [JavaScript Array Reduce](https://www.youtube.com/watch?v=g1C40tDP0Bk)",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "args": "node 11-args/process.js a b c d e"
   },
   "repository": {
     "type": "git",
